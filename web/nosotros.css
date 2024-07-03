@@ -1,0 +1,62 @@
+body{font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-image: url('imagenes/loby.jpg'); /* Ruta de tu imagen de fondo */
+    background-size: cover; /* La imagen cubre todo el fondo */
+    background-repeat: no-repeat; /* La imagen no se repite */
+    background-attachment: fixed; /* La imagen permanece fija al hacer scroll */
+    background-position: center; /* Centra la imagen de fondo */
+    color: #fff; /* Color del texto para contraste */
+    
+}
+
+/* Estilos para el encabezado */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #d88f11fa;
+    color: #fff;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    text-align: center;
+}
+
+/* Estilos para las secciones */
+section {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(33, 27, 27, 0.1);
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-top: 0;
+    color: #000;
+}
+
+section p {
+    line-height: 1.6;
+    text-align: center;
+    color: #000;
+}
+
+section img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+}
+
+/* Estilos para el pie de página */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}

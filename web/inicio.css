@@ -1,0 +1,220 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-image: url('imagenes/5.jpg'); /* Ruta de tu imagen de fondo */
+    background-size: cover; /* La imagen cubre todo el fondo */
+    background-repeat: no-repeat; /* La imagen no se repite */
+    background-attachment: fixed; /* La imagen permanece fija al hacer scroll */
+    background-position: center; /* Centra la imagen de fondo */
+    color: #fff; /* Color del texto para contraste */
+    
+    
+}
+/* Contenedor principal */
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #abcea0 ;
+    color: #030000;
+}
+ 
+
+/* Logo */
+.logo a {
+    color: #0e0000;
+    text-decoration: none;
+    font-size: 24px;
+}
+.logo img{
+    height: 50px; 
+    width: 70px;
+}
+
+/* Navegación */
+nav {
+    position: relative;
+}
+
+/* Menú */
+.menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu a {
+    display: block;
+    padding: 15px 20px;
+    color: rgb(8, 0, 0);
+    text-decoration: none;
+}
+
+.menu a:hover {
+    background-color: #fcfcfc;
+}
+ 
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+    }
+
+    .menu li {
+        width: 100%;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+}
+.baner img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.descripcion {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.descripcion h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.descripcion p {
+    font-size: 1.2em;
+    color: #040000;
+}
+
+section {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-top: 0;
+    color: #040000;
+}
+
+section p {
+    line-height: 1.6;
+    text-align: center;
+    color: #040000;
+}
+
+section img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+} 
+
+/* Estilos para la animacion  */
+ 
+.welcome-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.welcome-message {
+    font-size: 2.5em;
+    color: #61dafb;
+    opacity: 0;
+    transform: scale(0.5) rotate(10deg);
+    animation: magicAnimation 3s ease-out forwards, colorChange 4s steps(4, end) infinite;
+}
+
+@keyframes magicAnimation {
+    0% {
+        opacity: 0;
+        transform: scale(0.5) rotate(10deg);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) rotate(0deg);
+    }
+}
+
+@keyframes colorChange {
+    0% {
+        color: #61dafb;
+    }
+    25% {
+        color: #f39c12;
+    }
+    50% {
+        color: #2ecc71;
+    }
+    75% {
+        color: #e74c3c;
+    }
+    100% {
+        color: #9b59b6;
+    }
+
+
+}
+ .texto{
+    text-align: left;
+ }
+
+/* el foter  */
+
+ .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-media {
+    margin-top: 1rem;
+}
+
+.social-media a {
+    margin: 0 10px;
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;
+}
+
+.social-media img:hover {
+    transform: scale(1.1);
+}
